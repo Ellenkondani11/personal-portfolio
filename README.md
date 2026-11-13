@@ -1,20 +1,5 @@
 # Ellen Kondani: Personal Portfolio Website
 
-Individual Practical Assignment 2
-Module Code: 351cs3203
-Module Name: Multimedia Tools and Applications
-Student Name: Ellen Kondani
-Programme: Bachelor of Science in Computer Science
-Institution: DMI: St. John the Baptist University, Mangochi Campus, Malawi
-Lecturer: Mr Phillimon
-Date Line: 13 November 2026 at 4:00 PM
-Submission Email: multimediaassignment10@gmail.com
-Hosting Platform: GitHub Pages
-Development Environment: Visual Studio Code
-
-GitHub Repository URL: https://github.com/Ellenkondani11/personal-portfolio
-Live GitHub Pages URL: https://Ellenkondani11.github.io/personal-portfolio/
-
 ## 1. Project Overview and Background
 
 This project represents the design and development of an interactive personal portfolio website for Ellen Kondani, a Computer Science student at DMI: St. John the Baptist University in Mangochi, Malawi. 
