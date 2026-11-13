@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Concepts: Interactive Web Animations Showcase</title>
+  <meta name="description" content="Demonstration of web animations and interactive user interface techniques by Ellen Kondani, including typing animations, hover effects, ambient backgrounds, and skill progress bars.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand-link" aria-label="Ellen Kondani Portfolio Home">
+        <div class="brand-logo-mark">EK</div>
+        <div class="brand-text">
+          <span class="brand-name">Ellen Kondani</span>
+          <span class="brand-sub">Computer Science</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About Me</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item active"><a href="animations.html">Animated Concepts</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html#contact" class="btn btn-primary btn-sm">Contact Me</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" style="padding-top: 32px;">
+      <div class="container">
+        <div class="section-head section-head-left reveal-element">
+          <div class="pill-badge">
+            <span class="status-dot"></span>
+            <span>Multimedia and User Experience Engineering</span>
+          </div>
+          <h1 class="section-title">Animated Concepts and Interactive Design</h1>
+          <p class="section-subtitle">
+            Demonstrating purposeful web animations that improve communicative clarity, guide user focus, and introduce delightful micro feedbacks without causing cognitive fatigue.
+          </p>
+        </div>
+
+        <div class="interactive-demo-card reveal-element">
+          <div class="pill-badge" style="margin-bottom: 12px;">Concept A: Animated Text</div>
+          <h2 class="demo-title">Automated Character Sequencing and Typing Engine</h2>
+          <p class="demo-subtitle">
+            Simulates natural terminal keying by sequentially inserting characters into the DOM, applying realistic cadence variations, pausing at word endings, and smoothly backspacing.
+          </p>
+
+          <div class="demo-display-stage" style="background: var(--brand-primary); color: var(--surface-white); border-color: rgba(205,255,140,0.3);">
+            <div>
+              <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-accent); margin-bottom: 8px;">Active Live Sequencing:</div>
+              <div style="font-size: 32px; font-weight: 700; letter-spacing: -0.03em;">
+                <span id="typing-text-demo">Future Software Engineer</span><span class="cursor-blink" style="color: var(--brand-accent);">|</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--brand-primary);">Technical Implementation Overview:</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: var(--text-muted); margin-bottom: 16px;">
+              Built using vanilla JavaScript timing loops combined with CSS keyframe blinking cursor styling. Avoids heavy third party libraries, ensuring fast rendering on mobile devices.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span class="tech-badge">Vanilla JavaScript</span>
+              <span class="tech-badge">Window.setTimeout Recursion</span>
+              <span class="tech-badge">CSS @keyframes Blink</span>
+              <span class="tech-badge">Zero Frame Drops</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="interactive-demo-card reveal-element">
+          <div class="pill-badge" style="margin-bottom: 12px;">Concept B: Hover Effects</div>
+          <h2 class="demo-title">Interactive Micro Feedbacks and State Transitions</h2>
+          <p class="demo-subtitle">
+            Physical elevation, border glow diffusion, and angular rotations that notify the user of interactive readiness. Move your mouse or tap each card below:
+          </p>
+
+          <div class="hover-playground-grid">
+            <div class="hover-box hover-box-lift">
+              <div class="hover-icon-circle">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+              </div>
+              <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Elevation Lift</h3>
+              <p style="font-size: 14px; color: var(--text-muted);">
+                Negative vertical translation along the Y axis combined with a diffuse box shadow creates visual depth.
+              </p>
+            </div>
+
+            <div class="hover-box hover-box-glow">
+              <div class="hover-icon-circle" style="color: #10b981;">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Border Illumination</h3>
+              <p style="font-size: 14px; color: var(--text-muted);">
+                Spreads an ambient spring green luminous halo, signalling high priority actionable elements.
+              </p>
+            </div>
+
+            <div class="hover-box hover-box-spin">
+              <div class="hover-icon-circle">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              </div>
+              <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Icon Gyration</h3>
+              <p style="font-size: 14px; color: var(--text-muted);">
+                Applies a 360 degree rotational transform with cubic bezier easing, illustrating responsive feedback.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="interactive-demo-card reveal-element">
+          <div class="pill-badge" style="margin-bottom: 12px;">Concept C: Animated Ambient Background</div>
+          <h2 class="demo-title">Floating Atmospheric Mesh and Geometric Transitions</h2>
+          <p class="demo-subtitle">
+            Subtle background movements establish a distinctive modern aesthetic without distracting from textual readability. Inspect the live container below:
+          </p>
+
+          <div class="animated-bg-canvas-box">
+            <div class="floating-circle orb-1"></div>
+            <div class="floating-circle orb-2"></div>
+            <div class="floating-circle orb-3"></div>
+            <div style="position: relative; z-index: 10; text-align: center; padding: 20px;">
+              <div style="font-size: 20px; font-weight: 700; margin-bottom: 6px;">Ambient Canvas Surface</div>
+              <div style="font-size: 13px; color: var(--brand-accent);">Harmonized CSS animations running continuously on GPU compositing layers</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <p style="font-size: 14px; line-height: 1.6; color: var(--text-muted);">
+              Constructed using pure CSS <code>@keyframes</code> manipulating translation coordinates and scale factors. Gaussian blurs are applied to give a smooth organic quality reminiscent of modern application dashboards.
+            </p>
+          </div>
+        </div>
+
+        <div class="interactive-demo-card reveal-element">
+          <div class="pill-badge" style="margin-bottom: 12px;">Concept D: Animated Skill Indicators</div>
+          <h2 class="demo-title">Dynamic Proficiency Meters and Numeric Counters</h2>
+          <p class="demo-subtitle">
+            Progress indicators calibrate automatically when scrolled into view, smoothly expanding from zero to designated proficiency scores while counting up.
+          </p>
+
+          <div style="margin-bottom: 24px;">
+            <button id="btn-reanimate-skills" class="btn btn-primary btn-sm">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              <span>Click to Re-trigger Progress Animation</span>
+            </button>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+            <div style="background: var(--surface-subtle); padding: 20px; border-radius: var(--radius-16);">
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Web Systems Engineering (HTML5, CSS3, JS)</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-target="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item" style="margin-top: 20px;">
+                <div class="skill-item-header">
+                  <span>Backend Architecture (Python, Django)</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-target="92%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background: var(--surface-subtle); padding: 20px; border-radius: var(--radius-16);">
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Multimedia Identity and Canva Design</span>
+                  <span class="skill-percent">94%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-target="94%"></div>
+                </div>
+              </div>
+              <div class="skill-item" style="margin-top: 20px;">
+                <div class="skill-item-header">
+                  <span>Relational Database Management (PostgreSQL)</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-target="88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="interactive-demo-card reveal-element">
+          <div class="pill-badge" style="margin-bottom: 12px;">Concept E: Scroll-Triggered Reveals</div>
+          <h2 class="demo-title">Viewport Intersection Animations</h2>
+          <p class="demo-subtitle">
+            Rather than popping into existence abruptly, content cards slide gently upward and fade in as they cross the viewport threshold, powered by the browser native <code>IntersectionObserver</code> API.
+          </p>
+
+          <div style="background: var(--surface-subtle); border-radius: var(--radius-16); padding: 24px; border: 1px solid var(--border-divider);">
+            <div style="font-weight: 700; font-size: 15px; color: var(--brand-primary); margin-bottom: 8px;">Performance Advantages:</div>
+            <ul style="font-size: 14px; color: var(--text-muted); padding-left: 20px; line-height: 1.6;">
+              <li>Executes off the main thread, avoiding layout thrashing during scroll</li>
+              <li>Unobserves elements once triggered, freeing memory resources</li>
+              <li>Gracefully falls back to standard visibility if JavaScript is disabled</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="brand-link" style="color: var(--surface-white);">
+            <div class="brand-logo-mark">EK</div>
+            <div class="brand-text">
+              <span class="brand-name" style="color: var(--surface-white);">Ellen Kondani</span>
+              <span class="brand-sub" style="color: var(--brand-accent);">Computer Science</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            Computer Science student portfolio developed for the Multimedia Tools and Applications Assignment at DMI: St. John the Baptist University, Mangochi Campus.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Website Sections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="animations.html">Animated Concepts</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Academic Portfolio Info</h4>
+          <ul class="footer-links">
+            <li><a href="projects.html#eatl-project">Elle Agri Tech Links (EATL)</a></li>
+            <li><a href="projects.html#inventory-project">Inventory Management System</a></li>
+            <li><a href="projects.html#udp-project">UDP File Sharing Protocol</a></li>
+            <li><a href="https://github.com/ellenkondani" target="_blank" rel="noopener noreferrer">Main GitHub Profile</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Copyright 2026 Ellen Kondani. Built with valid HTML5, CSS3, and JavaScript. Hosted on GitHub Pages.
+        </div>
+        <div class="footer-social-row">
+          <a href="https://github.com/ellenkondani" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Visit GitHub Profile">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="mailto:hello@ellenkondani.com" class="footer-social-btn" aria-label="Send direct email to Ellen Kondani">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
